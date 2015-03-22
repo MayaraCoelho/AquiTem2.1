@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--TelaInicial-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TelaInicial" id="vXZ-lx-hvc" customClass="ViewController" customModule="AquiTem2_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,220 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5V-vY-bJm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Vender">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="300" y="533" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="d2y-hN-mK0" kind="show" id="dQF-FV-2mQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI3-dF-QUk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Comprar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="533" width="61" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ot1-of-pgY" kind="show" id="82t-I7-Sp2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="B5V-vY-bJm"/>
+                                <exclude reference="MI3-dF-QUk"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="B5V-vY-bJm"/>
+                                <include reference="MI3-dF-QUk"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-625.5" y="559"/>
+        </scene>
+        <!--TelaMapa-->
+        <scene sceneID="A50-ad-O1K">
+            <objects>
+                <viewController title="TelaMapa" id="ot1-of-pgY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SxH-7w-Ar0"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpN-M0-24z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FeN-Hn-9Oq">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHm-gP-lqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.5" y="559"/>
+        </scene>
+        <!--TelaLista-->
+        <scene sceneID="fAW-nD-Vvp">
+            <objects>
+                <viewController title="TelaLista" id="eEz-P6-90T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AFf-12-Q2J"/>
+                        <viewControllerLayoutGuide type="bottom" id="yzL-D8-nfG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0vo-lK-6Mw">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYM-7P-KR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.5" y="-135"/>
+        </scene>
+        <!--TelaFiltro-->
+        <scene sceneID="5QZ-7P-N3w">
+            <objects>
+                <viewController title="TelaFiltro" id="9sv-hG-Feg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qsS-ns-1Y6"/>
+                        <viewControllerLayoutGuide type="bottom" id="pbS-Hs-iuV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HIy-Jx-zGm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paE-r7-99q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.5" y="-135"/>
+        </scene>
+        <!--TelaFiltro-->
+        <scene sceneID="t4o-af-FUc">
+            <objects>
+                <viewController title="TelaFiltro" id="Fpz-Bm-gss" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mAN-wA-UME"/>
+                        <viewControllerLayoutGuide type="bottom" id="9je-Qn-9KZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mjQ-J6-a0X">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nf-cE-hZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155.5" y="-135"/>
+        </scene>
+        <!--TelaListaVendedores-->
+        <scene sceneID="YOa-aP-nFC">
+            <objects>
+                <viewController title="TelaListaVendedores" id="hWr-u1-nbg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ija-4I-ckA"/>
+                        <viewControllerLayoutGuide type="bottom" id="HHW-iJ-BVp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kTR-B7-59q">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHS-fV-qne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2803.5" y="-137"/>
+        </scene>
+        <!--TelaRegistro-->
+        <scene sceneID="cIW-XY-WZz">
+            <objects>
+                <viewController title="TelaRegistro" id="GVz-51-n1f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xOa-G0-Umt"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvn-sD-aep"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uc6-5R-J98">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9db-dO-v1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="559"/>
+        </scene>
+        <!--TelaVendedorConfiguracao-->
+        <scene sceneID="MVt-me-ZPK">
+            <objects>
+                <viewController title="TelaVendedorConfiguracao" id="AfB-Na-gO1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bdh-dp-t8d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gek-nC-NaM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qYO-5m-doX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YM-3D-9ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516.5" y="555"/>
+        </scene>
+        <!--TelaVendedorAdministracao-->
+        <scene sceneID="4G4-Qr-oNl">
+            <objects>
+                <viewController title="TelaVendedorAdministracao" id="E3Q-dt-KWA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v6L-JN-9ws"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3a-lb-0kM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ov2-Sg-rTb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zl-kS-tmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.5" y="551"/>
+        </scene>
+        <!--TelaPerfilVendedor-->
+        <scene sceneID="rUf-2n-aDc">
+            <objects>
+                <viewController title="TelaPerfilVendedor" id="4XH-B0-caR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ojl-0x-HcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="388-EL-UZj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zwV-yK-feb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2b-4s-Mk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.5" y="543"/>
+        </scene>
+        <!--TelaLogin-->
+        <scene sceneID="T6S-c9-hgo">
+            <objects>
+                <viewController title="TelaLogin" id="d2y-hN-mK0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JwU-hR-zEp"/>
+                        <viewControllerLayoutGuide type="bottom" id="n1o-5t-Q98"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAw-B2-S8G">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtb-Kt-9HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.5" y="-135"/>
         </scene>
     </scenes>
 </document>
