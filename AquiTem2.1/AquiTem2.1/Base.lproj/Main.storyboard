@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ftP-6r-Upk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -129,21 +129,29 @@
             <point key="canvasLocation" x="2155.5" y="-135"/>
         </scene>
         <!--TelaListaVendedores-->
-        <scene sceneID="YOa-aP-nFC">
+        <scene sceneID="eUb-G7-Kzr">
             <objects>
-                <viewController title="TelaListaVendedores" id="hWr-u1-nbg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ija-4I-ckA"/>
-                        <viewControllerLayoutGuide type="bottom" id="HHW-iJ-BVp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kTR-B7-59q">
+                <tableViewController title="TelaListaVendedores" id="ftP-6r-Upk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1sk-vA-dAX">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHS-fV-qne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Yl9-aY-UMC">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yl9-aY-UMC" id="nRB-FS-3er">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ftP-6r-Upk" id="Rl4-Hq-fYo"/>
+                            <outlet property="delegate" destination="ftP-6r-Upk" id="9qp-cj-Wfx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CD8-Hv-qVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2803.5" y="-137"/>
+            <point key="canvasLocation" x="2887.5" y="-135"/>
         </scene>
         <!--TelaRegistro-->
         <scene sceneID="cIW-XY-WZz">

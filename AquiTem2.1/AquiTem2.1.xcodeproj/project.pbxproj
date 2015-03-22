@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F38B45711ABF3D64002A1293 /* ListaVendedoresEtrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B45701ABF3D64002A1293 /* ListaVendedoresEtrutura.swift */; };
 		F3EAB2701ABDEB2400AB9917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAB26F1ABDEB2400AB9917 /* AppDelegate.swift */; };
 		F3EAB2721ABDEB2400AB9917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAB2711ABDEB2400AB9917 /* ViewController.swift */; };
 		F3EAB2751ABDEB2400AB9917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EAB2731ABDEB2400AB9917 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F38B45701ABF3D64002A1293 /* ListaVendedoresEtrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaVendedoresEtrutura.swift; sourceTree = "<group>"; };
 		F3EAB26A1ABDEB2400AB9917 /* AquiTem2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquiTem2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EAB26E1ABDEB2400AB9917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3EAB26F1ABDEB2400AB9917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				F3EAB2761ABDEB2400AB9917 /* Images.xcassets */,
 				F3EAB2781ABDEB2400AB9917 /* LaunchScreen.xib */,
 				F3EAB26D1ABDEB2400AB9917 /* Supporting Files */,
+				F38B45701ABF3D64002A1293 /* ListaVendedoresEtrutura.swift */,
 			);
 			path = AquiTem2.1;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EAB2721ABDEB2400AB9917 /* ViewController.swift in Sources */,
+				F38B45711ABF3D64002A1293 /* ListaVendedoresEtrutura.swift in Sources */,
 				F3EAB2701ABDEB2400AB9917 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				F3EAB28B1ABDEB2500AB9917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3EAB28C1ABDEB2500AB9917 /* Build configuration list for PBXNativeTarget "AquiTem2.1Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				F3EAB28E1ABDEB2500AB9917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
