@@ -69,6 +69,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mpN-M0-24z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FeN-Hn-9Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -86,6 +87,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yzL-D8-nfG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0vo-lK-6Mw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -103,6 +105,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pbS-Hs-iuV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HIy-Jx-zGm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -120,6 +123,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9je-Qn-9KZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mjQ-J6-a0X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -131,15 +135,27 @@
         <!--TelaListaVendedores-->
         <scene sceneID="eUb-G7-Kzr">
             <objects>
-                <tableViewController title="TelaListaVendedores" id="ftP-6r-Upk" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1sk-vA-dAX">
+                <tableViewController title="TelaListaVendedores" id="ftP-6r-Upk" customClass="ListaVendedores" customModule="AquiTem2_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="1sk-vA-dAX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Yl9-aY-UMC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="e9C-nj-pLE" rowHeight="75" style="IBUITableViewCellStyleDefault" id="Yl9-aY-UMC">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yl9-aY-UMC" id="nRB-FS-3er">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e9C-nj-pLE">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact">
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -162,6 +178,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nvn-sD-aep"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uc6-5R-J98">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -179,6 +196,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Gek-nC-NaM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qYO-5m-doX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -196,6 +214,7 @@
                         <viewControllerLayoutGuide type="bottom" id="I3a-lb-0kM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ov2-Sg-rTb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -213,6 +232,7 @@
                         <viewControllerLayoutGuide type="bottom" id="388-EL-UZj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zwV-yK-feb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -230,6 +250,7 @@
                         <viewControllerLayoutGuide type="bottom" id="n1o-5t-Q98"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VAw-B2-S8G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
