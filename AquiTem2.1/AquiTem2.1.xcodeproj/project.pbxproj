@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03CD3B221AC1AFE500BC4F13 /* Vendedores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CD3B211AC1AFE500BC4F13 /* Vendedores.swift */; };
+		03CD3B241AC1AFEE00BC4F13 /* Produtos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CD3B231AC1AFEE00BC4F13 /* Produtos.swift */; };
 		F38B45711ABF3D64002A1293 /* ListaVendedores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B45701ABF3D64002A1293 /* ListaVendedores.swift */; };
 		F38B45761ABF4CA8002A1293 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F38B45731ABF4CA8002A1293 /* 2.jpg */; };
 		F38B45771ABF4CA8002A1293 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F38B45741ABF4CA8002A1293 /* 3.jpg */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CD3B211AC1AFE500BC4F13 /* Vendedores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendedores.swift; sourceTree = "<group>"; };
+		03CD3B231AC1AFEE00BC4F13 /* Produtos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produtos.swift; sourceTree = "<group>"; };
 		F38B45701ABF3D64002A1293 /* ListaVendedores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaVendedores.swift; sourceTree = "<group>"; };
 		F38B45731ABF4CA8002A1293 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		F38B45741ABF4CA8002A1293 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				F3EAB26F1ABDEB2400AB9917 /* AppDelegate.swift */,
 				F3EAB2711ABDEB2400AB9917 /* ViewController.swift */,
 				F38B45701ABF3D64002A1293 /* ListaVendedores.swift */,
+				03CD3B211AC1AFE500BC4F13 /* Vendedores.swift */,
+				03CD3B231AC1AFEE00BC4F13 /* Produtos.swift */,
 				F3EAB2731ABDEB2400AB9917 /* Main.storyboard */,
 				F3EAB2761ABDEB2400AB9917 /* Images.xcassets */,
 				F3EAB2781ABDEB2400AB9917 /* LaunchScreen.xib */,
@@ -227,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CD3B241AC1AFEE00BC4F13 /* Produtos.swift in Sources */,
 				F3EAB2721ABDEB2400AB9917 /* ViewController.swift in Sources */,
 				F38B45711ABF3D64002A1293 /* ListaVendedores.swift in Sources */,
+				03CD3B221AC1AFE500BC4F13 /* Vendedores.swift in Sources */,
 				F3EAB2701ABDEB2400AB9917 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
