@@ -17,6 +17,7 @@ struct ListaVendedoresEstrutura {
     var marca: String
     var categoria: String
     var imagem: UIImage!
+//    var localidade: String
     
     
 }
@@ -26,6 +27,8 @@ struct ListaVendedoresEstrutura {
 
 class ListaVendedores: UITableViewController {
     
+    @IBOutlet weak var textNome: UILabel!
+    @IBOutlet weak var textMarca: UILabel!
     // criação de um array para vendedores da estrutura acima.
     var vendedores = [ListaVendedoresEstrutura]()
     
@@ -33,13 +36,22 @@ class ListaVendedores: UITableViewController {
         super.viewDidLoad()
         
         // população da tableview
-        vendedores = [ListaVendedoresEstrutura (nome: "Amanda", marca: "Tutti Doces", categoria: "doces", imagem: UIImage(named: "1.jpg")),
+        vendedores = [ListaVendedoresEstrutura (nome: "Amanda", marca: "Tutti Doces", categoria: "doces", imagem: UIImage(named: "1.jpg" )),
                       ListaVendedoresEstrutura(nome: "Mayara", marca: "Sweet Healthy", categoria: "healthy", imagem: UIImage(named: "2.jpg")),
                       ListaVendedoresEstrutura (nome: "Emanoel", marca: "Trufas e Cia", categoria: "doces", imagem: UIImage(named: "3.jpg"))]
         
+        // sets the estimated row height of the cell, which is the height of the existing prototype cell
+        tableView.estimatedRowHeight = 68.0
+        
+        //changes the rowHeight property to UITableViewAutomaticDimension, which is the default row height in iOS 8.
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         // remove os separadores vazios.
         tableView.tableFooterView = UIView(frame:CGRectZero)
-   
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         // Reload the table
         self.tableView.reloadData()
         
@@ -50,31 +62,38 @@ class ListaVendedores: UITableViewController {
         return vendedores.count
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        tableView.reloadData()
+        
+    }
     
     // função que constrói
         override func tableView(tableView:UITableView,cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
-        
-        var vendedor = self.vendedores[indexPath.row]
- 
-        cell.textLabel!.text = vendedor.nome
-        cell.textLabel!.text = vendedor.marca
-        cell.textLabel!.text = vendedor.categoria
-        cell.imageView!.image = vendedor.imagem
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+            var cell :  UITableViewCell? = self.tableView.dequeueReusableCellWithIdentifier("Cell") as?  UITableViewCell
             
-        return cell
+            if( cell == nil){
+               cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+            
+                
+            }
+    
+        var vendedor = self.vendedores[indexPath.row]
+            
+        cell!.textLabel!.text = vendedor.marca
+        cell?.detailTextLabel?.text = "Localidade"
+        cell!.textLabel!.text = vendedor.categoria
+        cell!.imageView!.image = vendedor.imagem
+        cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        return cell!
     }
     
-   
-    
-    
-//    
-//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 44.0
-//    }
-//
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60.0
+        
+    }
+
 }
 
 
